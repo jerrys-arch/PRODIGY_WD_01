@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description of the product and its benefits">
+    <title>TaskMaster – Boost Your Productivity with Task Automation</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav id="navbar" role="navigation" aria-label="Main Navigation">
+            <div class="container">
+                <a href="#" class="logo" aria-label="Home">TaskMaster</a>
+                <button class="menu-icon" id="menu-icon" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul id="nav-links" role="menubar">
+                    <li role="none"><a href="#hero" role="menuitem" aria-label="Home">Home</a></li>
+                    <li role="none"><a href="#task-creation" role="menuitem" aria-label="Create Task">Create Task</a></li>
+                    <li role="none"><a href="#task-list" role="menuitem" aria-label="Task List">Task List</a></li>
+                    <li role="none"><a href="#testimonials" role="menuitem" aria-label="Testimonials">Testimonials</a></li>
+                    <li role="none"><a href="#pricing" role="menuitem" aria-label="Pricing">Pricing</a></li>
+                    <li role="none"><a href="#features" role="menuitem" aria-label="Features">Features</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hidden">
+        <div class="container">
+            <h1>Revolutionize Your Workflow</h1>
+            <p>Boost productivity with powerful features that help you organize, prioritize, and track your tasks seamlessly.</p>
+            <a href="#cta" class="cta-btn">Get Started</a>
+        </div>
+    </section>
+ <!-- Features Section -->
+ <section id="features" class="hidden">
+    <div class="container">
+        <h2>Key Features</h2>
+    </div>
+        <div class="feature">
+            <i class="fas fa-cogs fa-4x"></i> 
+            <h3>Task Automation</h3>
+            <p>Save time with custom workflows.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-bell fa-4x"></i> 
+            <h3>Smart Notifications</h3>
+            <p>Stay on top of important tasks with real-time reminders.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-users fa-4x"></i> 
+            <h3>Collaboration Tools</h3>
+            <p>Work with your team seamlessly on shared tasks.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-sync-alt fa-4x"></i> 
+            <h3>Cross-Device Sync</h3>
+            <p>Access your tasks anywhere, on any device.</p>
+        </div>
+   
+</section>
+    <!-- Task Creation Section -->
+    <section id="task-creation" class="hidden">
+        <h2>Create a New Task</h2>
+        <form id="taskForm">
+            <label for="taskTitle">Task Title:</label>
+            <input type="text" id="taskTitle" name="taskTitle" required>
+            
+            <label for="taskDescription">Task Description:</label>
+            <textarea id="taskDescription" name="taskDescription"></textarea>
+            
+            <label for="taskDeadline">Deadline:</label>
+            <input type="date" id="taskDeadline" name="taskDeadline">
+            
+            <button type="submit">Add Task</button>
+        </form>
+       
+    </section>
+    
+
+    <section id="task-list">
+        <h2>Your Tasks</h2>
+        <!-- Tasks will be dynamically added here -->
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="hidden">
+        <div class="container">
+            <h2>What Our Users Are Saying</h2>
+            <div class="testimonial">
+                <p>"This tool changed the way we work—our team is more productive than ever!"</p>
+                <h4>- Jane D., Project Manager</h4>
+            </div>
+            <div class="testimonial">
+                <p>"We couldn't be happier with how intuitive and powerful this app is!"</p>
+                <h4>- John M., Software Engineer</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="hidden">
+        <div class="container">
+            <h2>Pricing</h2>
+            <div class="pricing-plan">
+                <h3>Basic Plan</h3>
+                <p>Free</p>
+                <p>Perfect for individual users.</p>
+                <a href="#cta" class="cta-btn">Get Started</a>
+            </div>
+            <div class="pricing-plan">
+                <h3>Pro Plan</h3>
+                <p>$9.99/month</p>
+                <p>Includes advanced features like automation and analytics.</p>
+                <a href="#cta" class="cta-btn">Start Free Trial</a>
+            </div>
+            <div class="pricing-plan">
+                <h3>Enterprise Plan</h3>
+                <p>Custom Pricing</p>
+                <p>Tailored solutions for large teams.</p>
+                <a href="#cta" class="cta-btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action (CTA) -->
+    <section id="cta" class="hidden">
+        <div class="container">
+            <h2>Start Your Free Trial Today!</h2>
+            <a href="#form" class="cta-btn">Sign Up Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="hidden">
+        <nav class="nav-footer">
+            <a href="#">About</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>© 2024 TaskMaster. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
